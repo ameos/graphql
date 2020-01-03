@@ -1,0 +1,29 @@
+{
+    "name": "ameos/graphql",
+    "description": "GraphQL implementation",
+    "type": "typo3-cms-extension",
+    "homepage": "https://github.com/ameos/graphql",
+    "version": "1.0.0",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Ameos Team",
+            "email": "typo3dev@ameos.com",
+            "homepage": "http://www.ameos.com/"
+        }
+    ],
+    "keywords": [
+        "TYPO3 CMS",
+        "GraphQL"
+    ],
+    "require": {
+        "typo3/cms-core": "^9 | ^10 | dev-master",
+        "webonyx/graphql-php": "^0.13",
+        "php": ">=7.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ameos\\Graphql\\": "Classes"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:r="http://typo3.org/ns/TYPO3/CMS/Reports/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <be:moduleLayout>
+        <style>
+            .module-body { padding: 24px 0px; }
+            .module-body h1, .module-body .typo3-messages { margin-left: 24px; margin-right: 24px; }
+        </style>
+        <be:moduleLayout.button.shortcutButton icon="actions-system-shortcut-new" title="Shortcut label" />
+        <h1>GraphiQL</h1>
+        <f:flashMessages />
+        <f:if condition="!{error}">
+            <iframe src="{f:uri.action(action: 'index')}" style="border: none;" width="100%" height="100%">Loading...</iframe>
+        </f:if>
+    </be:moduleLayout>
+</html>
