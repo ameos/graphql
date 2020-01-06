@@ -16,14 +16,11 @@ namespace Ameos\Graphql\Config;
  */
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use GraphQL\Language\Parser;
-use GraphQL\Utils\BuildSchema;
-use GraphQL\Utils\AST;
 use GraphQL\Type\Schema;
 use GraphQL\Type\Definition\ResolveInfo;
-use Symfony\Component\Yaml\Parser as YamlParser;
 use GraphQL\Type\Definition\Type;
 use GraphQL\Type\Definition\ObjectType;
+use Symfony\Component\Yaml\Parser as YamlParser;
 
 class SchemaConfig
 {
